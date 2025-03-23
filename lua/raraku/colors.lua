@@ -29,9 +29,9 @@ return {
 
     -- Diagnostics
     redDiag = hsluv(12, 100, 38), -- #b70004
-    yellowDiag = hsluv(70, 62, 60), -- #a19057
-    cyanDiag = hsluv(190, 52, 58), -- #639493
-    blueDiag = hsluv(240, 60, 58), -- #6090b9
+    yellowDiag = hsluv(58, 86, 40), -- #765a1f
+    cyanDiag = hsluv(220, 68, 40), -- #376473
+    blueDiag = hsluv(254, 78, 40), -- #335ea2
 
     -- Diff
     redDiff = hsluv(12, 100, 83), -- #ffbfbf
