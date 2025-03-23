@@ -1,0 +1,9 @@
+[delta]
+    syntax-theme = raraku
+    line-numbers-minus-style = "#ca0005"
+    line-numbers-plus-style = "#147925"
+    line-numbers-zero-style = "#e4d3a6"
+    minus-style = "syntax #ffb3b3"
+    minus-emph-style = "syntax #ff9a9a"
+    plus-style = "syntax #b1efb5"
+    plus-emph-style = "syntax #a1e4a6"
