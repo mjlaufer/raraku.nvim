@@ -34,10 +34,10 @@ return {
     blueDiag = hsluv(240, 60, 58), -- #6090b9
 
     -- Diff
-    redDiff = hsluv(12, 100, 80), -- #ffb3b3
-    redDiffEmph = hsluv(12, 100, 74), -- #ff9a9a
-    greenDiff = hsluv(130, 42, 89), -- #b1efb5
-    greenDiffEmph = hsluv(130, 42, 85), -- #a1e4a6
+    redDiff = hsluv(12, 100, 83), -- #ffbfbf
+    redDiffEmph = hsluv(12, 100, 79), -- #ffafaf
+    greenDiff = hsluv(130, 28, 89), -- #c1eac4
+    greenDiffEmph = hsluv(130, 38, 85), -- #a6e3ab
     cyanDiff = hsluv(220, 50, 84), -- #aed8e9
     cyanDiffEmph = hsluv(220, 50, 80), -- #97cfe4
     blueDiff = hsluv(254, 58, 84), -- #c8d1ec
