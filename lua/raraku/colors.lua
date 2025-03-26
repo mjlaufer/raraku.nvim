@@ -27,12 +27,6 @@ return {
     orange = hsluv(22, 100, 44), -- #b44300
     purple = hsluv(284, 60, 44), -- #864eb5
 
-    -- Diagnostics
-    redDiag = hsluv(12, 100, 38), -- #b70004
-    yellowDiag = hsluv(58, 86, 40), -- #765a1f
-    cyanDiag = hsluv(220, 68, 40), -- #376473
-    blueDiag = hsluv(254, 78, 40), -- #335ea2
-
     -- Diff
     redDiff = hsluv(12, 100, 83), -- #ffbfbf
     redDiffEmph = hsluv(12, 100, 79), -- #ffafaf

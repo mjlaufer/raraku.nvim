@@ -25,7 +25,7 @@ return {
     WinSeparator = { fg = c.bg3 },
     LineNr = { fg = c.fg3 },
     CursorLineNr = { fg = c.orange },
-    Folded = { fg = c.cyanDiag, bg = c.bg2 },
+    Folded = { fg = c.cyanBright, bg = c.bg2 },
     FoldColumn = { fg = c.bg3 },
     SignColumn = { fg = c.bg3 },
     Pmenu = { bg = c.bg2 },
@@ -38,8 +38,8 @@ return {
     TabLine = { bg = c.bg2, fg = c.fg2 },
     TabLineFill = { bg = c.bg2 },
     TabLineSel = { bg = c.bg2 },
-    MatchParen = { fg = c.yellowBright, bg = c.bg3 },
-    Substitute = { fg = c.bg1, bg = c.yellowBright },
+    MatchParen = { fg = c.cyanBright, bg = c.bg3 },
+    Substitute = { fg = c.bg1, bg = c.cyanBright },
     Search = { bg = c.cyanDiffEmph },
     IncSearch = { bg = c.cyanDiffEmph },
     Visual = { bg = c.blueDiff },
@@ -95,8 +95,8 @@ return {
     Bold = { style = bold },
     Italic = { style = italic },
     Ignore = { fg = c.fg2 },
-    Error = { bg = c.redDiag },
-    Todo = { fg = c.redBright, style = bold },
+    Error = { bg = c.redBright },
+    Todo = { fg = c.red, style = bold },
 
     ---- :h lsp-semantic_tokens --------------------------------
     ['@lsp.type.annotation.java'] = { fg = c.fg2 },
@@ -153,10 +153,10 @@ return {
     zshFunction = { fg = c.blue },
 
     ---- :h spell ----------------------------------------------
-    SpellBad = { sp = c.redDiag, style = undercurl },
-    SpellCap = { sp = c.redDiag, style = undercurl },
-    SpellLocal = { sp = c.redDiag, style = undercurl },
-    SpellRare = { sp = c.yellowDiag, style = undercurl },
+    SpellBad = { sp = c.redBright, style = undercurl },
+    SpellCap = { sp = c.redBright, style = undercurl },
+    SpellLocal = { sp = c.redBright, style = undercurl },
+    SpellRare = { sp = c.yellowBright, style = undercurl },
 
     ---- :h diff ----------------------------------------------
     DiffAdd = { bg = c.greenDiff },
@@ -165,21 +165,21 @@ return {
     DiffText = { bg = c.cyanDiffEmph },
 
     ---- :h diagnostic-highlight -------------------------------
-    DiagnosticError = { fg = c.redDiag },
-    DiagnosticWarn = { fg = c.yellowDiag },
-    DiagnosticHint = { fg = c.cyanDiag },
-    DiagnosticInfo = { fg = c.blueDiag },
+    DiagnosticError = { fg = c.redBright },
+    DiagnosticWarn = { fg = c.yellowBright },
+    DiagnosticHint = { fg = c.cyanBright },
+    DiagnosticInfo = { fg = c.blueBright },
     DiagnosticUnnecessary = { fg = c.fg3 },
 
-    DiagnosticVirtualTextError = { fg = c.redDiag },
-    DiagnosticVirtualTextWarn = { fg = c.yellowDiag },
-    -- DiagnosticVirtualTextHint = {},
-    -- DiagnosticVirtualTextInfo = {},
+    DiagnosticVirtualTextError = { fg = c.redBright },
+    DiagnosticVirtualTextWarn = { fg = c.yellowBright },
+    DiagnosticVirtualTextHint = { fg = c.cyanBright },
+    DiagnosticVirtualTextInfo = { fg = c.blueBright },
 
-    DiagnosticUnderlineError = { style = undercurl, sp = c.redDiag },
-    DiagnosticUnderlineWarn = { style = undercurl, sp = c.yellowDiag },
-    DiagnosticUnderlineHint = { style = undercurl, sp = c.cyanDiag },
-    DiagnosticUnderlineInfo = { style = undercurl, sp = c.blueDiag },
+    DiagnosticUnderlineError = { style = undercurl, sp = c.redBright },
+    DiagnosticUnderlineWarn = { style = undercurl, sp = c.yellowBright },
+    DiagnosticUnderlineHint = { style = undercurl, sp = c.cyanBright },
+    DiagnosticUnderlineInfo = { style = undercurl, sp = c.blueBright },
 
     -- DiagnosticFloatingError = {},
     -- DiagnosticFloatingWarn = {},
@@ -197,10 +197,10 @@ return {
     LspReferenceRead = { bg = c.bg3 },
     LspReferenceWrite = { bg = c.bg3 },
 
-    LspDiagnosticsDefaultError = { fg = c.redDiag },
-    LspDiagnosticsDefaultWarning = { fg = c.yellowDiag },
-    LspDiagnosticsDefaultHint = { fg = c.cyanDiag },
-    LspDiagnosticsDefaultInformation = { fg = c.blueDiag },
+    LspDiagnosticsDefaultError = { fg = c.redBright },
+    LspDiagnosticsDefaultWarning = { fg = c.yellowBright },
+    LspDiagnosticsDefaultHint = { fg = c.cyanBright },
+    LspDiagnosticsDefaultInformation = { fg = c.blueBright },
 
     -- LspDiagnosticsVirtualTextError = {},
     -- LspDiagnosticsVirtualTextWarning = {},
@@ -222,12 +222,6 @@ return {
     -- LspDiagnosticsSignHint = {},
     -- LspDiagnosticsSignInformation = {},
 
-    ---- :h flash (external plugin) ----------------------------
-    FlashBackdrop = { fg = c.fg2 },
-    FlashCurrent = { fg = c.bg1, bg = c.blueBright },
-    FlashLabel = { fg = c.magentaBright, bg = c.bg3 },
-    FlashMatch = { fg = c.bg1, bg = c.yellowBright },
-
     ---- :h gitsigns (external plugin) -------------------------
     GitSignsAdd = { fg = c.green },
     GitSignsChange = { fg = c.cyan },
@@ -237,7 +231,7 @@ return {
     ---- neotest (external plugin) -----------------------------
     NeotestAdapterName = { fg = c.fg1 },
     NeotestDir = { fg = c.fg1 },
-    NeotestRunning = { fg = c.magentaBright },
+    NeotestRunning = { fg = c.orange },
     NeotestPassed = { fg = c.green },
     NeotestFailed = { fg = c.red },
     NeotestSkipped = { fg = c.yellow },
@@ -253,8 +247,8 @@ return {
     NeotestExpandMarker = { fg = c.fg3 },
 
     ---- nvim-cmp (external plugin) ----------------------------
-    CmpItemAbbrMatch = { fg = c.greenBright },
-    CmpItemAbbrMatchFuzzy = { fg = c.green },
+    CmpItemAbbrMatch = { fg = c.green },
+    CmpItemAbbrMatchFuzzy = { fg = c.greenBright },
     CmpItemKindMenu = { fg = c.green },
     CmpItemKindText = { fg = c.fg1 },
     CmpItemKindKeyword = { fg = c.purple },
@@ -272,8 +266,8 @@ return {
     CmpItemKindFile = { fg = c.fg1 },
 
     ---- custom highlights for nvim-dap (external plugin) ------
-    DapBreakpointText = { fg = c.redDiag },
-    DapBreakpointRejectedText = { fg = c.blueDiag },
+    DapBreakpointText = { fg = c.redBright },
+    DapBreakpointRejectedText = { fg = c.blueBright },
     DapStoppedLine = { bg = c.blueDiff },
     DapStoppedText = { fg = c.blueBright },
 
@@ -287,11 +281,11 @@ return {
     DapUISource = { fg = c.purple },
     DapUILineNumber = { fg = c.orange },
     DapUIFloatBorder = { fg = c.bg3 },
-    DapUIWatchesEmpty = { fg = c.red },
+    DapUIWatchesEmpty = { fg = c.yellow },
     DapUIWatchesValue = { fg = c.green },
-    DapUIWatchesError = { fg = c.redDiag },
+    DapUIWatchesError = { fg = c.red },
     DapUIBreakpointsPath = { fg = c.blue },
-    DapUIBreakpointsInfo = { fg = c.blueDiag },
+    DapUIBreakpointsInfo = { fg = c.blueBright },
     DapUIBreakpointsCurrentLine = { fg = c.orange },
     DapUIPlayPause = { fg = c.green },
     DapUIRestart = { fg = c.magenta },
@@ -304,23 +298,6 @@ return {
 
     ---- nvim-dap-virtual-text (external plugin) ---------------
     NvimDapVirtualText = { fg = c.fg3 },
-
-    ---- :h nvim-notify (external plugin) ----------------------
-    NotifyDEBUGBorder = { fg = c.fg3 },
-    NotifyERRORBorder = { fg = c.redDiag },
-    NotifyINFOBorder = { fg = c.blueDiag },
-    NotifyWARNBorder = { fg = c.yellowDiag },
-    NotifyTRACEBorder = { fg = c.fg3 },
-    NotifyDEBUGIcon = { fg = c.fg3 },
-    NotifyERRORIcon = { fg = c.red },
-    NotifyINFOIcon = { fg = c.blue },
-    NotifyWARNIcon = { fg = c.yellow },
-    NotifyTRACEIcon = { fg = c.fg3 },
-    NotifyDEBUGTitle = { fg = c.fg2 },
-    NotifyERRORTitle = { fg = c.red },
-    NotifyINFOTitle = { fg = c.blue },
-    NotifyWARNTitle = { fg = c.yellow },
-    NotifyTRACETitle = { fg = c.fg2 },
 
     ---- :h nvim-tree (external plugin) ------------------------
     NvimTreeRootFolder = { fg = c.blue },
